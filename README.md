@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Features
 
-This project allows users to record and share their screen without need to download or install any proram, directly from the browser.
+This project allows users to record and share their screen and voice without need to download or install any program, directly from the browser.
 
 # Demo
 
