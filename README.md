@@ -10,7 +10,7 @@ This project allows users to record and share their screen without need to downl
 
 # Demo
 
-This project can be accessed from (https://shareit-574a3.web.app)
+This project can be accessed from (https://awabkb.github.io/Screen-Recording-Sharing/)
 
 ## Development server
 
