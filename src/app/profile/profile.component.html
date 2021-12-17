@@ -1,0 +1,19 @@
+<form class="form" [formGroup]="profileForm">
+    <mat-form-field class="form-control">
+      <mat-label>Your Full Name</mat-label>
+      <input matInput formControlName="fullName" type="text" />
+    </mat-form-field>
+    <mat-form-field class="form-control">
+      <mat-label>Your email</mat-label>
+      <input matInput formControlName="email" type="text" />
+    </mat-form-field>
+
+    <!-- <mat-form-field class="form-control">
+      <mat-label>User Photo</mat-label>
+      <input matInput formControlName="photo" type="file" />
+    </mat-form-field> -->
+    
+    <div class="form-footer">
+      <button mat-stroked-button (click)="updateProfile()">Update Info</button>
+    </div>
+  </form>

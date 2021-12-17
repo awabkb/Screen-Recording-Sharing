@@ -1,0 +1,32 @@
+<div style="margin-left: 20px">
+    <div style="display: flex; align-items: center;margin: 15px; margin-left: 0">
+        <button mat-flat-button (click)="start()" [disabled]="clicked" style="margin-right: 10px" color="warn">
+            Start Recording
+        </button>
+        <button mat-stroked-button (click)="stop()" id="stop" [disabled]="!clicked" style="margin-right: 10px">
+            Stop Recoding
+        </button>
+        <p style="padding-top: 15px;color: rgb(85, 85, 8);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Max recording time is 10 minutes</p>
+    </div>
+
+    <video #video id="video" controls autoplay></video>
+    <mat-card style="width: 400px;margin-top: 10px;">
+        <h4 style="margin-left: 20px">To upload video enter name:</h4>
+        <div style="display: flex; align-items: center; margin-left: 20px">
+            <mat-form-field class="example-form-field">
+                <mat-label>Video Name</mat-label>
+                <input matInput type="text" [(ngModel)]="videoName" />
+            </mat-form-field>
+
+            <button [disabled]="!videoName" style="margin-left: 25px" mat-stroked-button (click)="upload()">
+                upload Video
+            </button>
+            <img *ngIf="percentage == 100" style="width: 32px; height: 32px ;margin-left: 15px;"
+                src="../../assets/icons/check-circle-regular.svg" />
+
+            <mat-progress-spinner *ngIf="percentage != 100" style="margin-left: 15px" [color]="color" [mode]="mode"
+                [value]="percentage" [diameter]="30">
+            </mat-progress-spinner>
+        </div>
+    </mat-card>
+</div>

@@ -1,0 +1,23 @@
+<div style="margin: 20px; max-width: 100%;align-items: center;">
+  <mat-card style="margin-bottom: 10px;max-width: 1200px;" *ngFor="let video of videos; let i = index">
+    <h2>{{ i + 1 }}. {{ video.Name }}</h2>
+    <mat-grid-list cols="2" rowHeight="2:1">
+      <mat-grid-tile>
+          <video src="{{ video.Url }}" id="my-video" controls width="100%" height="auto"></video>
+        
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <div class="btnsCon">
+          <button mat-flat-button color="warn"(click)="shareVideo(video)" >Share</button>
+          <button mat-stroked-button style="color: red" (click)="removeVideo(video)">
+            Delete
+          </button>
+          <button mat-stroked-button fileSaver [method]="'GET'" [fileName]="'videoName.mp4'" [url]="video.Url">
+            Download
+          </button>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card>
+</div>

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "shareit": "shareit-574a3"
+  },
+  "targets": {
+    "shareit-574a3": {
+      "hosting": {
+        "VideoSharing": [
+          "shareit-574a3"
+        ]
+      }
+    }
+  }
+}

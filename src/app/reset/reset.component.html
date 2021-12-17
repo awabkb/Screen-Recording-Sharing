@@ -1,0 +1,17 @@
+<form [formGroup]="passwordReset">
+  <div style="margin: 20px">
+    <h2>Reset Password By Email</h2>
+  </div>
+  <mat-form-field class="form-control">
+    <mat-label>Your Email Address</mat-label>
+    <input matInput formControlName="email" type="email" />
+  </mat-form-field>
+  <div style="margin-top: 20px; text-align: center;">
+    <button mat-stroked-button (click)="resetPasswordByEmail()">
+      Send Email
+    </button>
+  </div>
+  <div style="margin-top: 20px; text-align: center;">
+    <a href="login">Login</a>
+  </div>
+</form>

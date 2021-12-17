@@ -1,0 +1,31 @@
+<p>Share your video!</p>
+
+<div class="sharing-container">
+  <textarea disabled matInput style="margin-bottom: 20px;" [value]="data.videoURL"></textarea>
+  <button mat-stroked-button [cdkCopyToClipboard]="data.videoURL" title="Copy">
+    Copy to ClipBoard
+    <i class="fas fa-copy"></i>
+  </button>
+</div>
+
+<div class="share-btn-container">
+    <a [href]="facebookURL" class="facebook-btn">
+      <i class="fab fa-facebook"></i>
+    </a>
+
+    <a [href]="twitterURL" class="twitter-btn">
+      <i class="fab fa-twitter"></i>
+    </a>
+
+    <a [href]="email" class="pinterest-btn">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+    <a [href]="linkedinURL" class="linkedin-btn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a [href]="whatsappURL" class="whatsapp-btn">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>

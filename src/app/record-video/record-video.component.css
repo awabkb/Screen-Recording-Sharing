@@ -1,0 +1,11 @@
+#video {
+    border: 1px solid #999;
+    width: 98%;
+    max-width: 860px;
+  }
+h4{
+  display: block;
+  font-size: 1.3em;
+  margin-top: 0.67em;
+}
+[hidden] { display: none !important;}
